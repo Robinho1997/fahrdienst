@@ -1,0 +1,53 @@
+.anzahl {
+  background-color: #58b8c6;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  border-top: 1px solid white;
+}
+
+.ride-container {
+  padding: 5% 5%;
+  border-bottom: 1px solid white;
+  background-color: #1a474e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ride-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-row {
+  margin-top: 20px;
+}
+
+.mitfahren-btn,
+.delete-btn {
+  border: none;
+  color: white;
+}
+
+.mitfahren-btn {
+  background-color: #58b8c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.delete-btn {
+  background-color: #362A89;
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+}
