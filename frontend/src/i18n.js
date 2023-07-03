@@ -30,6 +30,7 @@ i18n
             availableSeat1: "verfügbarer Platz",
             availableSeat2: "verfügbare Plätze",
             button: "Mitfahren",
+            info: "Zusätzliche Infos:"
           }
         },
       },
@@ -54,6 +55,7 @@ i18n
             availableSeat1: "available seat",
             availableSeat2: "available seats",
             button: "Ride along",
+            info: "Additional Information:"
           }
         },
       },
