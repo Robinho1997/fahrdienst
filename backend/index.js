@@ -1,4 +1,5 @@
 require("dotenv").config();
+const { createUser } = require("./controllers/user");
 const express = require("express");
 const app = express();
 const connectDB = require("./db/connect");
@@ -10,6 +11,8 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/v1/fahrten", rides);
 
+
+app.post("/register", createUser);
 
 const start = async () => {
   try {
