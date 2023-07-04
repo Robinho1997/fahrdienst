@@ -2,6 +2,10 @@ const User = require("../models/User");
 
 const createUser = async (req, res) => {
   try {
+    const { userName, email, password } = req.body;
+    if (!userName || !email || !password) {
+      return res.status(400).json({ error: "Missing required fields" });
+    }
     await User.findOne({ email: req.body.email }).then((user) => {
       if (user) {
         return res
@@ -14,10 +18,12 @@ const createUser = async (req, res) => {
           password: req.body.password,
         });
         newUser.save();
+        console.log("New user created", newUser);
         return res.status(200).json({ msg: newUser });
       }
     });
   } catch (error) {
+    console.error("Error creating user:", error);
     res.status(400).json({ msg: error });
   }
 };
